@@ -36,15 +36,15 @@
 
             <div class="tab">
                 <button class="tablinks" onclick="openCity(event, 'Home')" id="defaultOpen">Home</button>
-                <button class="tablinks" onclick="openCity(event, 'London')">News</button>
-                <button class="tablinks" onclick="openCity(event, 'Paris')">Facilities</button>
-                <button class="tablinks" onclick="openCity(event, 'Tokyo')">Explore</button>
+                <button class="tablinks" onclick="openCity(event, 'News')">News</button>
+                <button class="tablinks" onclick="openCity(event, 'Facilities')">Facilities</button>
+                <button class="tablinks" onclick="openCity(event, 'Explore')">Explore</button>
             </div>
 
-            <div class="home_section">
-                <div id="Home" class="tabcontent">
-                    <h3 class="heading1">WELCOME TO RAVNSBJERG KOLLEGIET</h3>
-                
+
+            <div id="Home" class="tabcontent">
+
+                <h2 class="heading1">WELCOME TO RAVNSBJERG KOLLEGIET</h2>
 
                 <div class="slideshow">
 
@@ -66,12 +66,12 @@
                             <div class="numbertext">3 / 5</div>
                             <img src="images/ravnsbjerg_photo3.jpg" style="width:100%">
                         </div>
-                        
+
                         <div class="mySlides fade">
                             <div class="numbertext">4 / 5</div>
                             <img src="images/ravnsbjerg_photo4.jpg" style="width:100%">
                         </div>
-                        
+
                         <div class="mySlides fade">
                             <div class="numbertext">5 / 5</div>
                             <img src="images/ravnsbjerg_photo5.jpg" style="width:100%">
@@ -83,40 +83,45 @@
                     </div>
                     <br>
 
-                    <!-- The dots/circles -->
-              <!--      
+                    <!-- The dots/circles -->  
                     <div style="text-align:center">
                         <span class="dot" onclick="currentSlide(1)"></span>
                         <span class="dot" onclick="currentSlide(2)"></span>
                         <span class="dot" onclick="currentSlide(3)"></span>
                     </div>
-                            -->
                 </div>
 
                 <p class="home_para">Check out the latest news in the dorm, read about our facilities or just explore Ravnsbjerg Kollegiet with this interactive application.</p>
+            </div>
+
+
+            <div id="News" class="tabcontent">
+                <h2 class="heading1">NEWS</h2>
+
+                <button class="accordion">Section 1</button>
+                <div class="panel">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
-                    
+
+                <button class="accordion">Section 2</button>
+                <div class="panel">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+
+                <button class="accordion">Section 3</button>
+                <div class="panel">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+
             </div>
 
-            <div id="London" class="tabcontent">
-                <h3>London</h3>
-                <p>London is the capital city of England. And England is my city!<br><br>
-
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna et pharetra pharetra massa massa ultricies mi. Eu tincidunt tortor aliquam nulla facilisi. Pellentesque elit ullamcorper dignissim cras tincidunt. Sodales ut etiam sit amet nisl purus in. Feugiat vivamus at augue eget. Non odio euismod lacinia at. Risus feugiat in ante metus dictum. Mattis rhoncus urna neque viverra justo nec ultrices dui sapien. Lectus vestibulum mattis ullamcorper velit sed. Nulla facilisi morbi tempus iaculis urna.<br>
-
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna et pharetra pharetra massa massa ultricies mi. Eu tincidunt tortor aliquam nulla facilisi. Pellentesque elit ullamcorper dignissim cras tincidunt. Sodales ut etiam sit amet nisl purus in. Feugiat vivamus at augue eget. Non odio euismod lacinia at. Risus feugiat in ante metus dictum. Mattis rhoncus urna neque viverra justo nec ultrices dui sapien. Lectus vestibulum mattis ullamcorper velit sed. Nulla facilisi morbi tempus iaculis urna.<br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna et pharetra pharetra massa massa ultricies mi. Eu tincidunt tortor aliquam nulla facilisi. Pellentesque elit ullamcorper dignissim cras tincidunt. Sodales ut etiam sit amet nisl purus in. Feugiat vivamus at augue eget. Non odio euismod lacinia at. Risus feugiat in ante metus dictum. Mattis rhoncus urna neque viverra justo nec ultrices dui sapien. Lectus vestibulum mattis ullamcorper velit sed. Nulla facilisi morbi tempus iaculis urna.
-
-                </p>
-            </div>
-
-            <div id="Paris" class="tabcontent">
-                <h3>Paris</h3>
+            <div id="Facilities" class="tabcontent">
+                <h2 class="heading1">FACILITIES</h2>
                 <p>Paris is the capital of France.</p>
             </div>
 
-            <div id="Tokyo" class="tabcontent">
-                <h3>Tokyo</h3>
+            <div id="Explore" class="tabcontent">
+                <h2 class="heading1">EXPLORE</h2>
                 <p>Tokyo is the capital of Japan.</p>
             </div>
 

@@ -18,7 +18,7 @@
 
     main {}
 
-    /* Header section */
+    /* ---HEADER SECTION--- */
 
     .navigation_container {
         border-bottom: 2px solid #84C02C;
@@ -74,7 +74,7 @@
         transform: rotate(45deg) translate(-8px, -8px);
     }
 
-    /* Body */
+    /* ----BODY---- */
 
     .sections {
         height: 490px;
@@ -82,15 +82,12 @@
 
     /* Home section */
 
-    .home_section {
-        background-color: #B0DC70;
-        height: 100%;
-    }
-
     .heading1 {
         font-family: 'Roboto', sans-serif;
+        font-size: 1.17em;
         font-weight: bold;
         margin-top: 20px;
+        margin-bottom: 20px;
         text-align: center;
     }
 
@@ -262,13 +259,54 @@
         border-left: none;
         height: 100%;
         overflow: auto;
-        background-color: #B0DC70;
+        background-color: white;
         display: flex;
         flex-direction: column;
     }
 
+    /* Accordion */
+    .accordion {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+    }
 
-    /* Footer section */
+    .accordion:after {
+        content: '\02795';
+        /* Unicode character for "plus" sign (+) */
+        font-size: 13px;
+        color: #777;
+        float: right;
+        margin-left: 5px;
+    }
+
+    .accordion.active:after {
+        content: "\2796";
+        /* Unicode character for "minus" sign (-) */
+    }
+
+    .active,
+    .accordion:hover {
+        background-color: #ccc;
+    }
+
+    .panel {
+        padding: 0 18px;
+        background-color: white;
+        /*display: none;
+        max-height: 0;*/
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+
+    /* ---FOOTER SECTION--- */
 
     .page_footer {
         display: flex;
