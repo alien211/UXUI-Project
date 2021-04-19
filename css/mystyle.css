@@ -272,13 +272,15 @@
 
     #mySidenav button {
         position: absolute;
-        left: -92px;
+        left: -94px;
         transition: 0.3s;
         padding: 15px;
         text-decoration: none;
         font-size: 20px;
-        color: white;
+        color: black;
         border-radius: 0 5px 5px 0;
+        border: 1px solid black;
+        border-left: 0;
     }
 
     #mySidenav button:hover {
@@ -308,7 +310,7 @@
     /* Accordion */
     .accordion {
         background-color: #eee;
-        color: #444;
+        color: black;
         cursor: pointer;
         padding: 18px;
         width: 100%;
@@ -323,7 +325,6 @@
         content: '\02795';
         /* Unicode character for "plus" sign (+) */
         font-size: 13px;
-        color: #777;
         float: right;
         margin-left: 5px;
     }

@@ -1,5 +1,5 @@
-
 // Content change
+/*globals $:false*/
 
 function openTab(evt, cityName) {
     var i, tabcontent, tablinks;
