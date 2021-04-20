@@ -12,8 +12,8 @@
 
 <body class="page__body">
 
-    <header>
-        <nav class="navigation_container">
+    <header class="navigation_container">
+        
 
             <div class="menuitems_container">
 
@@ -22,12 +22,13 @@
             </div>
 
             <!-- Menu icon-->
-            <div class="icon_container" onclick="myFunction(this)">
+            <label for="menu_icon" class="icon_container" onclick="iconTransform(this);leftMenu();">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
-            </div>
-        </nav>
+            </label>
+            <input type="checkbox" id="menu_icon" class="menu_icon">
+        
     </header>
 
     <main>
@@ -35,10 +36,10 @@
         <div class="sections">
 
             <div class="tab" id="mySidenav">
-                    <button onclick="openTab(event, 'Home')" id="about">Home</button>
-                    <button onclick="openTab(event, 'News')" id="blog">News</button>
-                    <button onclick="openTab(event, 'Facilities')" id="projects">Facilities</button>
-                    <button onclick="openTab(event, 'Explore')" id="contact">Explore</button>
+                    <button onclick="openTab(event, 'Home')" id="about" class="button">Home</button>
+                    <button onclick="openTab(event, 'News')" id="blog" class="button">News</button>
+                    <button onclick="openTab(event, 'Facilities')" id="projects" class="button">Facilities</button>
+                    <button onclick="openTab(event, 'Explore')" id="contact" class="button">Explore</button>
             </div>
 
 
@@ -54,27 +55,27 @@
                         <!-- Full-width images with number and caption text -->
                         <div class="mySlides fade">
                             <div class="numbertext">1 / 5</div>
-                            <img src="images/ravnsbjerg_photo1.jpg" style="width:100%">
+                            <img src="images/ravnsbjerg_photo1.jpg" style="width:100%" class="image">
                         </div>
 
                         <div class="mySlides fade">
                             <div class="numbertext">2 / 5</div>
-                            <img src="images/ravnsbjerg_photo2.jpg" style="width:100%">
+                            <img src="images/ravnsbjerg_photo2.jpg" style="width:100%" class="image">
                         </div>
 
                         <div class="mySlides fade">
                             <div class="numbertext">3 / 5</div>
-                            <img src="images/ravnsbjerg_photo3.jpg" style="width:100%">
+                            <img src="images/ravnsbjerg_photo3.jpg" style="width:100%" class="image">
                         </div>
 
                         <div class="mySlides fade">
                             <div class="numbertext">4 / 5</div>
-                            <img src="images/ravnsbjerg_photo4.jpg" style="width:100%">
+                            <img src="images/ravnsbjerg_photo4.jpg" style="width:100%" class="image">
                         </div>
 
                         <div class="mySlides fade">
                             <div class="numbertext">5 / 5</div>
-                            <img src="images/ravnsbjerg_photo5.jpg" style="width:100%">
+                            <img src="images/ravnsbjerg_photo5.jpg" style="width:100%" class="image">
                         </div>
 
                         <!-- Next and previous buttons -->
