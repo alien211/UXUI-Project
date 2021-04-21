@@ -9,7 +9,7 @@
     }
 
     .page__body {
-        font-family: 'Roboto', sans-serif;
+        font-family: Arial, Helvetica, sans-serif;
         max-width: 550px;
         margin: 0 auto;
         border: 1px solid lightgrey;
@@ -74,23 +74,23 @@
         transform: rotate(45deg) translate(-8px, -8px);
     }
 
+    .menu_icon {
+        display: none;
+    }
+
+
     /* ----BODY---- */
 
     .sections {
         height: 490px;
     }
 
-.menu_button {
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-}
-
     /* Home section */
 
     .heading1 {
         font-family: 'Roboto', sans-serif;
         font-size: 1.17em;
-        font-weight: bolder;
+        font-weight: bold;
         margin-top: 20px;
         margin-bottom: 20px;
         text-align: center;
@@ -99,21 +99,22 @@
     .home_para {
         font-family: 'Roboto', sans-serif;
         font-size: 15px;
-        margin-left: 16px;
+        margin: 0 auto;
         max-width: 100%;
         text-align: left;
     }
 
     /* Slideshow */
-    * {
-        box-sizing: border-box
-    }
 
     /* Slideshow container */
     .slideshow-container {
         max-width: 350px;
         position: relative;
         margin: 20px auto 0 auto;
+    }
+
+    .slideshow-container div:first-child {
+        display: block;
     }
 
     /* Hide the images by default */
@@ -190,7 +191,7 @@
 
     .active,
     .dot:hover {
-        background-color: #717171;
+        background-color: #84C02C;
     }
 
     /* Fading animation */
@@ -198,12 +199,12 @@
         -webkit-animation-name: fade;
         -webkit-animation-duration: 1.5s;
         animation-name: fade;
-        animation-duration: 1.5s;
+        /*animation-iteration-count: infinite;*/
     }
 
     @-webkit-keyframes fade {
         from {
-            opacity: .4
+            opacity: .6
         }
 
         to {
@@ -213,7 +214,7 @@
 
     @keyframes fade {
         from {
-            opacity: .4
+            opacity: .6
         }
 
         to {
@@ -226,7 +227,7 @@
         float: left;
         position: relative;
         /*border: 1px solid #ccc;*/
-        background-color: #84C02C;
+        background-color: white;
         width: 25%;
         /*height: 300px;*/
         height: 100%;
@@ -268,7 +269,7 @@
         border-left: none;
         height: 100%;
         overflow: auto;
-        background-color: #84C02C;
+        background-color: white;
         display: flex;
         flex-direction: column;
     }
@@ -324,6 +325,7 @@
         outline: none;
         font-size: 15px;
         transition: 0.4s;
+        margin-bottom: 5px;
     }
 
     .accordion:after {
@@ -351,6 +353,7 @@
         max-height: 0;*/
         overflow: hidden;
         transition: max-height 0.2s ease-out;
+        margin-bottom: 5px;
     }
 
     .white_stripe {
@@ -365,35 +368,45 @@
 
     /* ---FACILITIES SECTION--- */
 
-.fac_heading {
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
+    .fac_heading {
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        display: inline;
+    }
 
-.fac_image1 {
-    width: 380px;
-    margin-bottom: 10px;
-    border: 1px solid #2A2A2A;
-}
+    .fac_image1 {
+        width: 380px;
+        margin-bottom: 10px;
+        border: 1px solid #2A2A2A;
+    }
 
-.fac_description1 {
-    font-family: 'Roboto', sans-serif;
-    margin-bottom: 10px;
-}
+    .fac_description1 {
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 10px;
+    }
 
-.fac_image2 {
-    height: 350px;
-    margin-bottom: 10px;
-    border: 1px solid #2A2A2A;
-}
+    .fac_image2 {
+        height: 350px;
+        margin-bottom: 10px;
+        border: 1px solid #2A2A2A;
+    }
 
-.fac_image3 {
-    height: 160px;
-    margin-bottom: 10px;
-    border: 1px solid #2A2A2A;
-}
+    .fac_image3 {
+        height: 160px;
+        margin-bottom: 10px;
+        border: 1px solid #2A2A2A;
+    }
+
+    hr {
+        border-top: 1px solid black;
+    }
+
+    .fac_image4 {
+        width: 350px;
+        border: 1px solid #2A2A2A;
+        margin-left: 10px;
+    }
 
     /* ---FOOTER SECTION--- */
 

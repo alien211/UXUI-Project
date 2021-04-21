@@ -8,26 +8,29 @@
     <link rel="stylesheet" href="css/mystyle.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
 </head>
 
 <body class="page__body">
 
-    <header>
-        <nav class="navigation_container">
+    <header class="navigation_container">
 
-            <div class="menuitems_container">
 
-                <h1 class="ravnsbjerg_kollegiet">Ravnsbjerg Kollegiet</h1>
+        <div class="menuitems_container">
 
-            </div>
+            <h1 class="ravnsbjerg_kollegiet">Ravnsbjerg Kollegiet</h1>
 
-            <!-- Menu icon-->
-            <div class="icon_container" onclick="myFunction(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
-        </nav>
+        </div>
+
+        <!-- Menu icon-->
+        <label for="menu_icon" class="icon_container" onclick="iconTransform(this);leftMenu();">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </label>
+        <input type="checkbox" id="menu_icon" class="menu_icon">
+
     </header>
 
     <main>
@@ -35,46 +38,45 @@
         <div class="sections">
 
             <div class="tab" id="mySidenav">
-                    <button class="menu_button" onclick="openTab(event, 'Home')" id="about">Home</button>
-                    <button class="menu_button" onclick="openTab(event, 'News')" id="blog">News</button>
-                    <button class="menu_button" onclick="openTab(event, 'Facilities')" id="projects">Facilities</button>
-                    <button class="menu_button" onclick="openTab(event, 'Explore')" id="contact">Explore</button>
+                <button onclick="openTab(event, 'Home')" id="about" class="button">Home</button>
+                <button onclick="openTab(event, 'News')" id="blog" class="button">News</button>
+                <button onclick="openTab(event, 'Facilities')" id="projects" class="button">Facilities</button>
+                <button onclick="openTab(event, 'Explore')" id="contact" class="button">Explore</button>
             </div>
 
-
+            <!-- HOME PAGE -->
             <div id="Home" class="tabcontent">
 
                 <h2 class="heading1">WELCOME TO RAVNSBJERG KOLLEGIET</h2>
 
                 <div class="slideshow">
-
                     <!-- Slideshow container -->
                     <div class="slideshow-container">
 
                         <!-- Full-width images with number and caption text -->
                         <div class="mySlides fade">
                             <div class="numbertext">1 / 5</div>
-                            <img src="images/ravnsbjerg_photo1.jpg" style="width:100%">
+                            <img src="images/ravnsbjerg_photo1.jpg" style="width:100%" class="image">
                         </div>
 
                         <div class="mySlides fade">
                             <div class="numbertext">2 / 5</div>
-                            <img src="images/ravnsbjerg_photo2.jpg" style="width:100%">
+                            <img src="images/ravnsbjerg_photo2.jpg" style="width:100%" class="image">
                         </div>
 
                         <div class="mySlides fade">
                             <div class="numbertext">3 / 5</div>
-                            <img src="images/ravnsbjerg_photo3.jpg" style="width:100%">
+                            <img src="images/ravnsbjerg_photo3.jpg" style="width:100%" class="image">
                         </div>
 
                         <div class="mySlides fade">
                             <div class="numbertext">4 / 5</div>
-                            <img src="images/ravnsbjerg_photo4.jpg" style="width:100%">
+                            <img src="images/ravnsbjerg_photo4.jpg" style="width:100%" class="image">
                         </div>
 
                         <div class="mySlides fade">
                             <div class="numbertext">5 / 5</div>
-                            <img src="images/ravnsbjerg_photo5.jpg" style="width:100%">
+                            <img src="images/ravnsbjerg_photo5.jpg" style="width:100%" class="image">
                         </div>
 
                         <!-- Next and previous buttons -->
@@ -88,16 +90,16 @@
                         <span class="dot" onclick="currentSlide(2)"></span>
                         <span class="dot" onclick="currentSlide(3)"></span>
                         <span class="dot" onclick="currentSlide(4)"></span>
-                        <span class="dot" onclick="currentSlide(5)"></span><br><br> 
+                        <span class="dot" onclick="currentSlide(5)"></span><br><br>
                     </div>
                 </div>
 
                 <p class="home_para">Check out the latest news in the dorm, read about our facilities or just explore Ravnsbjerg Kollegiet with this interactive application.</p>
             </div>
 
-
+            <!-- NEWS & RULES -->
             <div id="News" class="tabcontent">
-                <h2 class="heading1">NEWS</h2>
+                <h2 class="heading1">NEWS & RULES</h2>
 
                 <button class="accordion">Section 1</button>
                 <div class="panel">
@@ -116,28 +118,58 @@
 
             </div>
 
+            <!-- FACILITIES -->
             <div id="Facilities" class="tabcontent">
                 <h2 class="heading1">FACILITIES</h2>
-                <h3 class="fac_heading">MULTIMEDIA ROOM</h3>
-                <img class="fac_image1" src="images/multimedia_room.jpg" alt="Multimedia room">
-                <p class="fac_description1">Our multimedia room is perfect for students who would like to work together on a school project or just want to enjoy a nice movie. The room has a projector and many tables and chairs so it's ready for any group to be rented out. Contact the residents' council to borrow a key to the multimedia room. Check out the dorm's website to read the rules of the multimedia room before renting it out. </p>
-                
-                <h3 class="fac_heading">GYM</h3>
-                <img class="fac_image2" src="images/gym2.jpg" alt="Gym">
-                <p class="fac_description1">Our gym is located in the basement of building 40. There you can find several gym equipment such as a treadmill or a bench and many weights that inhabitants can use to exercise. Read further information on the dorm's website such as rules of the gym and monthly fee.</p>
-                
-                <h3 class="fac_heading">MUSIC ROOM</h3>
-                <img class="fac_image3" src="images/music_room.jpg" alt="Music room">
-                <p class="fac_description1">The music room is equipped with several instruments such as a piano or drums. There's also 2 stereo speakers for students to use. Ask the caretaker for the keys if you would like to use the room.</p>
+
+                <p>Find out more about what shared facilities does Ravnsbjerg Kollegiet have for you.</p><br>
+
+                <button class="accordion">
+                    <h3 class="fac_heading">MULTIMEDIA ROOM</h3>
+                </button>
+                <div class="panel">
+                    <img class="fac_image1" src="images/multimedia_room.jpg" alt="Multimedia room">
+                    <p class="fac_description1">Our multimedia room is perfect for students who would like to work together on a school project or just want to enjoy a nice movie. The room has a projector and many tables and chairs so it's ready for any group to be rented out. Contact the residents' council to borrow a key to the multimedia room. Check out the dorm's website to read the rules of the multimedia room before renting it out.</p>
+                </div>
+
+                <button class="accordion">
+                    <h3 class="fac_heading">GYM</h3>
+                </button>
+                <div class="panel">
+                    <img class="fac_image2" src="images/gym2.jpg" alt="Gym">
+                    <p class="fac_description1">Our gym is located in the basement of building 38. There you can find several gym equipment such as a treadmill or a bench and many weights that inhabitants can use to exercise. Read further information on the dorm's website such as rules of the gym and monthly fee.</p>
+                </div>
+
+                <button class="accordion">
+                    <h3 class="fac_heading">MUSIC ROOM</h3>
+                </button>
+                <div class="panel">
+                    <img class="fac_image3" src="images/music_room.jpg" alt="Music room">
+                    <p class="fac_description1">The music room is equipped with several instruments such as a piano or drums. There's also 2 stereo speakers for students to use. Ask the caretaker for the keys if you would like to use the room.</p>
+                </div>
+
+                <br><br><br>
+                <hr />
+                <h3 class="heading1">What to do in Ravnsbjerg</h3>
+                <img class="fac_image4" src="images/activities.png">
             </div>
 
+            <!-- EXPLORE (MAP) -->
             <div id="Explore" class="tabcontent">
                 <h2 class="heading1">EXPLORE</h2>
-                <p>Tokyo is the capital of Japan.</p>
+                <p>Explore the map of the dorm.</p>
+                <div id='map' style='width: 400px; height: 300px;'></div>
+                <script>
+                    mapboxgl.accessToken = 'pk.eyJ1IjoidHdlbnl0d2VsdmUiLCJhIjoiY2tucmJqMHM1MGU5aTJ2bzc4c2Jmc2t1OSJ9.TBYAURDvqarW56GRuP6xpg';
+                    var map = new mapboxgl.Map({
+                        container: 'map',
+                        style: 'mapbox://styles/mapbox/streets-v11'
+                    });
+                </script>
             </div>
 
         </div>
-        
+
         <div class="white_stripe"></div>
 
     </main>
