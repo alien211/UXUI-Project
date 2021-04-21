@@ -21,7 +21,7 @@
     /* ---HEADER SECTION--- */
 
     .navigation_container {
-        border-bottom: 2px solid #84C02C;
+        border-bottom: 2px solid #2A2A2A;
         height: 100px;
         max-width: 550px;
         margin: 0 auto;
@@ -316,6 +316,8 @@
     /* Accordion */
     .accordion {
         background-color: #eee;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
         color: black;
         cursor: pointer;
         padding: 18px;
@@ -347,8 +349,9 @@
     }
 
     .panel {
-        padding: 0 18px;
         background-color: white;
+        padding: 20px 18px;
+        font-family: 'Roboto', sans-serif;
         /*display: none;
         max-height: 0;*/
         overflow: hidden;
@@ -407,6 +410,19 @@
         border: 1px solid #2A2A2A;
         margin-left: 10px;
     }
+
+    /* ---NEWS SECTION--- */
+
+.news_image {
+    width: 100%;
+}
+
+.covid_heading {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
 
     /* ---FOOTER SECTION--- */
 
